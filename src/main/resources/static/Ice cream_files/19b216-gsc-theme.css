@@ -1,0 +1,690 @@
+/* (c) Disney.  All rights reserved. */
+
+.gscTheme {
+    --colorBlack: #000;
+    --colorAlmostBlack: #0C0C0C;
+    --colorWhite: #FFF;
+    --colorLightPeach: #FFEDE3;
+    --colorDarkPeach: #C85117;
+    --colorDarkBrown: #7C3200;
+    --colorLightYellow: #FFD469;
+    --colorDarkLightPeach: #F5BBA1;
+    --filterColorBlack: invert(0%) sepia(55%) saturate(3136%) hue-rotate(359deg) brightness(97%) contrast(109%);
+    --filterColorWhite: invert(100%) sepia(100%) saturate(1%) hue-rotate(289deg) brightness(107%) contrast(101%);
+    --filterColorLightPeach: invert(87%) sepia(4%) saturate(1248%) hue-rotate(324deg) brightness(109%) contrast(101%);
+    --filterColorLighterPeach: invert(100%) brightness(100%) sepia(0) contrast(1) saturate(0.4);
+    --filterForSearchInputIcons: invert(0%) sepia(38%) saturate(500%) hue-rotate(332deg) brightness(120%) contrast(109%);
+    --filterColorWhiteForIcons: invert(100%) sepia(100%) saturate(1%) hue-rotate(289deg) brightness(300%) contrast(100%);
+}
+
+/* -------------------------------------------------- */
+
+/* Body */
+.gscTheme.blackBody,
+/* PEP Syndicated Component (header and footer) */
+.gscTheme .pepSyndicatedComponent,
+/* Global Messaging container */
+.gscTheme .globalMessageContainer,
+.gscTheme .globalMessageMainBottomContainer,
+/* Modal (for the Language Selector, for example) (SYNDICATED) */
+.gscTheme #modalPaddingLayer .ui-dialog,
+/* Modal (for the Language Selector, for example) (NO SYNDICATED) */
+.gscTheme .ui-widget-content,
+/* Search results container */
+.gscTheme .searchForm.ui-autocomplete,
+/* Header bar itself (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent .globalNavigationBar,
+/* Header bar itself (NO SYNDICATED) */
+.gscTheme .mobile-top,
+/* Search input container (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent .pepGlobalHeader .mobileSearch,
+/* Search input container (NO SYNDICATED) */
+.gscTheme .gnbLinkContainer,
+/* Sidebar (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer,
+/* Sidebar (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBar,
+/* Title of each opened category of the sidebar (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer .gnbCategory.open .gnbCategoryTitle,
+/* Title of each opened category of the sidebar (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBar .primary.menuToggle.open,
+/* Footer container (NO SYNDICATED) */
+.gscTheme .pepGlobalFooter .wdwFooter .standardContentContainer,
+/* DRC (assistance copies) container */
+.gscTheme .pepGlobalFooter .drcCta .drcCtaList,
+/* Show More Links (first section) categories container (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent #footer-lists-responsive-syndicated .main-link-group-section,
+/* Show More Links (both sections) categories container (NO SYNDICATED) */
+.gscTheme .base.standardContentContainer.footer,
+/* FAQ Containers */
+.gscTheme.faq,
+.gscTheme #pageContainerInner,
+.gscTheme .standardContentContainer,
+/* FAQ Input Search */
+.gscTheme #searchQuery,
+/* FAQ Topic Titles */
+.gscTheme.faq .topicMenuWrapper .mainTitle,
+/* FAQ Topic Accordion */
+.gscTheme.faq .topicMenuWrapper .accordionWrapper {
+    background: var(--colorBlack);
+}
+
+/* -------------------------------------------------- */
+
+/* Text in general */
+.gscTheme header,
+.gscTheme footer,
+/* Font icons of the header (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent .globalNavigationBar .icon,
+/* Font icons of the header (NO SYNDICATED) */
+.gscTheme .mobile-top .icon,
+.gscTheme .pepGlobalHeader .icon,
+/* Global Messaging text */
+.gscTheme .globalMessageContainer .globalMessageCopy,
+/* Search results title */
+.gscTheme .searchForm .ui-autocomplete-category,
+/* Text in general of nav categories content (SYNDICATED) */
+.gscTheme .gnbCategory,
+/* Text in general of nav categories content (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBar,
+/* Title of each closed category of the sidebar (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer .gnbCategory .gnbCategoryTitle,
+/* Park Hours box title (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer .gnbCategory .rightSubmenu .titleHours,
+/* Park Hours box title (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBar #navParkHours .linkHeading,
+/* Park Hours not available */
+.gscTheme li.parkHoursNotAvailable,
+/* Title of non-drop-down categories of the sidebar (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer .gnbCategory .mobileOnlyTitle,
+/* Title of non-drop-down categories of the sidebar (NO SYNDICATED) */
+.gscTheme #cart,
+.gscTheme #subMenuId-signInResponsive,
+.gscTheme #subMenuId-languageSelector,
+.gscTheme .noSDD,
+/* Extra links (below) inside many categories of the nav (SYNDICATED) */
+.gscTheme .gnbPlacesToStay .featuredPlacesList .title,
+.gscTheme .gnbPlacesToStay .placesToStayList .title,
+.gscTheme .gnbThingsToDo .thingsToDoList .title,
+.gscTheme .gnbOffers .offersList .title,
+.gscTheme .gnbMagicAccess .magicAccessList .title,
+.gscTheme .gnbSpecialOffers .specialOffersList .title,
+.gscTheme .gnbUpcomingEventsList .title,
+.gscTheme .gnbFeaturedDealsList .title,
+.gscTheme .gnbCruises .cruisesList .title,
+/* Extra links (below) inside many categories of the nav (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBar .secondary p,
+/* DRC (assistance copies) title */
+.gscTheme .pepGlobalFooter .drcCta .title,
+/* Show More Links (first section) category group title (SYNDICATED) */
+.gscTheme .footer h5,
+.gscTheme .footer-lists h5,
+/* Price per night (inside Places to Stay category of the nav) */
+.gscTheme .gnbResortTypeList.grouping .pricePerNight,
+/* Show More Links (first section) category group title (NO SYNDICATED) */
+.pepGlobalFooter .footerGeneralLinks .linksGroupTitle,
+/* Show More Links (second section) category group title (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent #footer-lists-responsive-syndicated .socialMediaAndRequestInformationContainer .sectionTitle,
+/* Show More Links (second section) category group title (NO SYNDICATED) */
+.gscTheme .standardContentContainer.socialMediaAndRequestInformationContainer .m-padinfull .title,
+/* Show More Links (second section) category group links (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent #footer-lists-responsive-syndicated .socialMediaAndRequestInformationContainer a,
+/* Show More Links (second section) category group links (NO SYNDICATED) */
+.gscTheme .standardContentContainer.socialMediaAndRequestInformationContainer .m-padinfull a,
+/* Legal footer text (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent footer .gde_footerCopyText,
+.gscTheme wdpr-ui-universal-layout .syndicated-footer-wrapper #gde_footerLegalContainer .gde_footerCopyText,
+/* Legal footer text (NO SYNDICATED) */
+.gscTheme footer .gde_footerCopyText,
+/* Modal Text */
+.gscTheme #modalTmpContent h1,
+.gscTheme #coBrowseFooter h4,
+.gscTheme #modalTmpContent #coBrowseFooter,
+.gscTheme #modalDialogDivContainer .pepSyndicatedComponent,
+.gscTheme #ui-dialog-title-contents,
+/* FAQ Titles */
+.gscTheme .subflowHeader h1,
+.gscTheme .rightBlockInnerWrapper .title,
+.gscTheme .base.standardContentContainer .mainTitle,
+.gscTheme .pepde-container .header,
+.gscTheme .mainBlock .topicCategoryTitle,
+.gscTheme .message,
+.gscTheme .faqRelatedQuestionsTitle {
+    color: var(--colorWhite);
+}
+
+/* -------------------------------------------------- */
+
+/* All links except... (SYNDICATED) */
+/* All header links except (NO SYNDICATED) */
+.gscTheme .pepGlobalHeader a,
+.gscTheme .pepGlobalHeader a:visited,
+/* All footer links except (NO SYNDICATED) */
+.gscTheme .pepGlobalFooter .footer a,
+.gscTheme .pepGlobalFooter .footer a:visited,
+/* Global Messaging title */
+.gscTheme .globalMessageContainer .globalMessageTitle,
+/* Global Messaging link */
+.gscTheme .globalMessageContainer .globalMessageCopy a,
+/* Modal links */
+.gscTheme #modalPaddingLayer .ui-dialog a,
+/* Search results links (NO-SYNDICATED) */
+.gscTheme .searchForm .ui-menu-item > a,
+/* Arrow of each category of the sidebar (when category is opened and closed) (SYNDICATED) */
+.pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer .gnbCategory.open .gnbCategoryTitle .arrow.icon__norgie-closed,
+.pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer .gnbCategory .gnbCategoryTitle .arrow.icon__norgie-closed,
+/* Arrow of each category of the sidebar (when category is opened and closed) (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBar .menuToggle .arrow,
+/* Icon of each opened category of the sidebar (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer .gnbCategory.open .gnbCategoryTitle .icon,
+/* Icon of each opened category of the sidebar (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBar .primary.menuToggle.open .icon,
+/* Title of each opened category of the sidebar (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer .gnbCategory.open .gnbCategoryTitle,
+/* Title of each opened category of the sidebar (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBar .primary.menuToggle.open .title,
+/* Links of the content of each category of the sidebar (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer .gnbCategory .gnbSubmenu ul li a,
+/* Links of the content of each category of the sidebar (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBar li a,
+/* Links at the bottom of MDX sidebar (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBar .primary .gnbMDXList .gnbMDXBottomSection a,
+/* View all links inside many categories of the nav (SYNDICATED) */
+.gscTheme .pepGlobalHeader .gnbCategory a.viewAll,
+.gscTheme .pepGlobalHeader .gnbCategory span.viewAll,
+/* Visit Disney.com link (SYNDICATED) */
+.pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer .gnbCategory.mobileOnly.gnbVisit .mobileOnlyTitle,
+/* Visit Disney.com link (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBar .title.noImg,
+/* DRC (assistance copies) subtitle */
+.gscTheme .pepGlobalFooter .drcCta .subtitle,
+/* Show More Links (first section) category group links (SYNDICATED) */
+.pepSyndicatedComponent #footer-lists-responsive-syndicated .footer-lists li a,
+/* Show More Links (second section) social media category icon title (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent #footer-lists-responsive-syndicated .socialMediaAndRequestInformationContainer li .iconTitle,
+/* Show More Links (second section) social media category icon title (NO SYNDICATED) */
+.gscTheme .pepGlobalFooter .socialMediaAndRequestInformationContainer .stayConnected .iconTitle,
+/* Show More Links (second section) category group text (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent #footer-lists-responsive-syndicated .socialMediaAndRequestInformationContainer,
+/* Show More Links (second section) category group text (NO SYNDICATED) */
+.gscTheme .standardContentContainer.socialMediaAndRequestInformationContainer,
+/* Legal footer links (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent footer #gde_footerLegalContainer a,
+/* Legal footer links (NO SYNDICATED) */
+.gscTheme footer .gde_footerLegalLinks a,
+.gscTheme footer .gde_footerLegalLinks a:link,
+.gscTheme footer .gde_footerLegalLinks a:visited,
+/* FAQ Search title and form */
+.gscTheme .searchHeader,
+/* FAQ Breadcrums */
+.gscTheme #globalNavBreadcrumbs .breadcrumb-separator,
+/* FAQ Links  */
+.gscTheme.faq .contentContainer a,
+.gscTheme.faq .contentContainer a:hover,
+.gscTheme.faq .contentContainer a:link,
+.gscTheme.faq .contentContainer a:visited,
+.gscTheme.faq .contentContainer .topicMenuList .title a:hover {
+    color: var(--colorLightPeach);
+}
+
+/* -------------------------------------------------- */
+
+/* SVG icons of the header (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent .globalNavigationBar img.svgIcon,
+/* SVG icons of the header (NO SYNDICATED) */
+.gscTheme img.svgIcon,
+.gscTheme .detailIndicator img.svgIcon,
+/* My Disney Experience logo closed (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBar .menuToggle:not(.open) .title.mdx {
+    filter: var(--filterColorWhite);
+}
+
+/* Horizontal separator (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent .horizontalSeparator,
+/* Horizontal separator (NO SYNDICATED) */
+.gscTheme adaptiveNavigationBarWrapper .horizontalSeparator,
+.gscTheme .pepGlobalFooter .horizontalSeparator {
+    background: #474747;
+}
+
+/* Modal background overlay */
+.gscTheme .modalGradientBg {
+    background: linear-gradient(
+        to bottom,
+        rgba(46, 23, 11, 0.9) 0%,
+        rgba(70, 46, 33, 0.8) 14%,
+        rgba(131, 108, 97, 0.7) 50%,
+        rgba(70, 46, 33, 0.8) 86%,
+        rgba(46, 23, 11, 0.9) 100%
+    )
+}
+
+/* Modal itself */
+.gscTheme #modalPaddingLayer .ui-dialog {
+    border-color: #474747;
+}
+
+/* Search results title */
+.gscTheme .searchForm .ui-autocomplete-category {
+    border-color: #474747;
+}
+
+/* Search results links on hover (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent .ui-autocomplete .quickLink > a:hover,
+.gscTheme .pepSyndicatedComponent .searchForm .quickLink .ui-corner-all:hover,
+/* Search results links on hover (NO-SYNDICATED) */
+.gscTheme .ui-autocomplete .quickLink > a:hover {
+    background-color: var(--colorLightPeach);
+    color: var(--colorBlack);
+}
+
+/* Logo */
+.gscTheme .waltDisneyWorldLogo {
+    border: 0;
+    filter: brightness(0) invert(1);
+}
+
+/* Search input container (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent .pepGlobalHeader .mobileSearch,
+/* Search input container (NO SYNDICATED) */
+.gscTheme .gnbLinkContainer {
+    border-radius: 0;
+    border-top: 0;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+/* Search input (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent .pepGlobalHeader .searchBox > #globalSearchQuery,
+/* Search input (NO SYNDICATED) */
+.gscTheme .gnbLinkContainer input#globalSearchQuery,
+.gscTheme .pepGlobalHeader .searchBox>#globalSearchQuery,
+/* CoBrowse Modal input Text */
+.gscTheme .inputElement {
+    background: var(--colorBlack) !important;
+    border: 1px solid var(--colorWhite);
+    box-shadow: none;
+    color: var(--colorWhite);
+    font-weight: 700;
+}
+.gscTheme .textInput input,
+.gscTheme .textInput input:focus {
+    border: 1px solid var(--colorLightPeach);
+    box-shadow: 0 0 4px 1px var(--colorLightPeach);
+}
+
+/* Search input icons */
+.gscTheme #globalSearchQuery_search_button.search_button,
+.gscTheme #globalSearchQuery_clear_button.clear_button,
+.gscTheme #searchQuery_search_button,
+.gscTheme #searchQuery_clear_button {
+    filter: var(--filterColorWhiteForIcons);
+}
+
+/* Search input search icon on hover */
+.gscTheme #globalSearchQuery_search_button.search_button:hover {
+    background-position: 0 -1553px;
+}
+
+/* Search input clear icon on hover */
+.gscTheme  #globalSearchQuery_clear_button.clear_button:hover {
+    background-position: 0 -664px;
+}
+
+/* Sidebar (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer,
+/* Sidebar (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBar {
+    box-shadow: -15px 0 20px -20px rgba(255, 255, 255, 0.65) inset;
+}
+
+/* Logged in bar at the top of the sidebar (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer .loggedIn,
+/* Logged in bar at the top of the sidebar (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBarWrapper .adaptiveNavigationBar a.mobileProfileSection,
+.gscTheme .adaptiveNavigationBar .loggedIn.mobileOnly {
+    background: var(--colorLightPeach);
+    color: var(--colorBlack);
+}
+
+/* Boxes that some links have of the content of each category of the sidebar (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent .globalNavigationBar .gnbLinkContainer .gnbCategory .gnbSubmenu .hoverable a,
+.gscTheme .pepSyndicatedComponent .globalNavigationBar .gnbLinkContainer .gnbCategory .gnbSubmenu .faqLink a,
+.gscTheme .pepSyndicatedComponent .globalNavigationBar .gnbLinkContainer .gnbCategory .gnbSubmenu .viewAll a,
+.gscTheme .pepSyndicatedComponent .globalNavigationBar .gnbLinkContainer .gnbCategory .gnbSubmenu .gnbProfile a,
+.gscTheme .pepSyndicatedComponent .globalNavigationBar .gnbLinkContainer .gnbCategory .gnbSubmenu .fallbackCta a,
+/* Boxes that some links have of the content of each category of the sidebar (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBar .placesToStayList li,
+.gscTheme .adaptiveNavigationBar .thingsToDoList li,
+.gscTheme .adaptiveNavigationBar .offersList li,
+.gscTheme .adaptiveNavigationBar .faqList li,
+.gscTheme .adaptiveNavigationBar .extraListItems li,
+.gscTheme .adaptiveNavigationBar li.hoverable,
+.gscTheme .adaptiveNavigationBar .cruisesList li,
+/* Park Hours box (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent .globalNavigationBar .gnbLinkContainer .gnbCategory .rightSubmenu.gnbParkHoursBox,
+/* Park Hours box (NO SYNDICATED) */
+.gscTheme .adaptiveNavigationBar #navParkHours {
+    background: var(--colorAlmostBlack);
+}
+
+/* Cart icon */
+.gscTheme .gnbCategory.gnbCart .icon {
+    filter: var(--filterColorWhite);
+}
+
+
+/* My Disney Experience logo opened (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer .gnbCategory.gnbMyDisneyVacation.open .myDisneyExperienceLogo {
+    filter: none;
+}
+
+/* My Disney Experience logo closed (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer .gnbCategory.gnbMyDisneyVacation .myDisneyExperienceLogo,
+.gscTheme .globalNavigationBar .myDisneyExperienceLogo {
+    filter: var(--filterColorWhite);
+}
+
+/* FAQ links of Help category of the nav (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent .gnbHelp .faqList li a {
+    color: var(--colorWhite) !important;
+}
+
+/* DRC (assistance copies) title (NO SYNDICATED) */
+.gscTheme .pepGlobalFooter .drcCta .title a {
+    color: var(--colorLightPeach) !important;
+}
+
+/* Show More Links dropdown closed */
+.gscTheme .mobileMoreLinks {
+    background: var(--colorWhite);
+    border: 0;
+}
+
+/* Show More Links dropdown opened */
+.gscTheme .mobileMoreLinks.open,
+/* FAQ More Help section container*/
+.gscTheme .contentContainer .rightBlock .moreHelp {
+    background: var(--colorLightPeach);
+    position: inherit;
+}
+
+.gscTheme .feedback .button  {
+    color: var(--colorBlack) !important;
+}
+
+/* Show More Links dropdown SVG icon */
+.gscTheme .mobileMoreLinks .svgIcon {
+    filter: var(--filterColorBlack);
+}
+
+/* Show More Links dropdown icon */
+.gscTheme .mobileMoreLinks .icon,
+/* Show More Links dropdown title */
+.gscTheme .mobileMoreLinks a,
+.gscTheme .mobileMoreLinks.open a {
+    color: var(--colorBlack) !important;
+}
+
+/* Show More Links whole content container (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent #footer-lists-responsive-syndicated,
+/* Show More Links whole content container (NO SYNDICATED) */
+.gscTheme .base.standardContentContainer.footer {
+    border: 1px solid var(--colorLightPeach);
+}
+
+/* Show More Links (first section) category group title */
+.gscTheme .footer h5,
+.gscTheme .footer-lists h5,
+/* Show More Links (first section) category group content */
+.gscTheme .pepGlobalFooter nav ul,
+/* Show More Links (first section) category group links */
+.gscTheme .pepGlobalFooter nav ul a {
+    background: transparent;
+}
+
+/* Related Disney Sites container (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent #footer-lists-responsive-syndicated .languageAndRelatedSitesContainer,
+/* Related Disney Sites container (NO SYNDICATED) */
+.gscTheme .pepGlobalFooter .footer-language-and-related {
+    background: var(--colorLightPeach);
+    border: 0;
+}
+
+/* Related Disney Sites title (SYNDICATED) */
+.gscTheme .pepGlobalFooter .wdwFooterTitle,
+/* Related Disney Sites text and links (SYNDICATED) */
+.gscTheme .pepSyndicatedComponent #footer-lists-responsive-syndicated .languageAndRelatedSitesContainer,
+.gscTheme .pepSyndicatedComponent #footer-lists-responsive-syndicated .languageAndRelatedSitesContainer a,
+/* FAQ More Help links */
+.gscTheme .contentContainer .moreHelp a,
+.gscTheme .contentContainer .moreHelp a:link,
+.gscTheme .contentContainer .moreHelp a:visited,
+/* FAQ More Help title */
+.gscTheme .moreHelp .title {
+    color: var(--colorBlack);
+}
+
+/* Related Disney Sites title and links (NO SYNDICATED) */
+.gscTheme .pepGlobalFooter .footer-language-and-related * {
+    color: var(--colorBlack) !important;
+}
+
+/* Background glow */
+.gscTheme #backgroundGlow,
+/* GodMother Image */
+.gscTheme .searchGodmotherImg {
+    display: none;
+}
+
+/* -------------------------------------------------- */
+
+/* FAQ More Help Icons */
+.gscTheme .widgets,
+/* FAQ Breadcrums Icons */
+.gscTheme #globalNavBreadcrumbs {
+    filter: var(--filterColorLighterPeach);
+}
+
+/* FAQ Search input */
+.gscTheme #searchQuery {
+    background: var(--colorBlack) !important;
+    border: 1px solid var(--colorLightPeach);
+    box-shadow: none;
+    color: var(--colorLightPeach);
+}
+
+/* FAQ Question and Answer Container */
+.gscTheme.faq .faqContainer .detailIndicator,
+.gscTheme.faq .faqContainer .indicator,
+.gscTheme.faq .faqContainer .text,
+.gscTheme.faq .faqTopic a.faqEntry:focus .faqContainer .indicator {
+    color: var(--colorDarkPeach) !important;
+}
+
+.gscTheme .message-center__container {
+    background-color: var(--colorLightPeach);
+}
+
+.gscTheme .message-center__header {
+    background-color: var(--colorDarkBrown);
+}
+
+.gscTheme .message-center__message__icon {
+    background-color: var(--colorDarkLightPeach);
+}
+
+.gscTheme .message-center__message--health_advisory .message-center__message__icon {
+    background-color: var(--colorLightYellow);
+}
+
+.gscTheme .message-center__header__icon {
+    background-color: var(--colorDarkPeach) !important; 
+    background-image: url('/media/pep/live/media/site/css/images/message-center/e65f4f-gsc-header.svg');
+}
+
+.gscTheme .message-center__message--info .message-center__message__icon {
+    background-image: url('/media/pep/live/media/site/css/images/message-center/af5a51-gsc-info.svg');
+}
+
+.gscTheme .pepGlobalFooter .languageAndRelatedSitesContainer a {
+    color: var(--colorBlack) !important;
+}
+
+/* -------------------------------------------------- */
+
+@media all and (min-width: 980px) {
+    /* Header bar container */
+    .gscTheme .globalNavigationBarWrapper,
+    /* Chrome bar container */
+    .gscTheme .pepGlobalHeader .chromeContainer,
+    /* Opened nav category content container (both submenues) */
+    .gscTheme .gnbSubmenusWrapper,
+    /* Right submenu of an opened nav category */
+    .gscTheme .gnbSubmenu .rightSubmenu,
+    /* Left section of Shop nav category */
+    .gscTheme .gnbShop .gnbSubmenusWrapper .leftSubmenu,
+    /* FAQ bottom section of Help nav category */
+    .gscTheme .gnbHelp .faqBottomSection {
+        background: var(--colorBlack);
+    }
+
+    /* -------------------------------------------------- */
+
+    /* Chrome bar links (Show Disney.com, account links, Language Selector) */
+    .gscTheme .pepGlobalHeader .chromeContainer .visitLink,
+    .gscTheme .pepGlobalHeader .accountContainer a,
+    .gscTheme .pepGlobalHeader .accountContainer a:hover,
+    .gscTheme .pepGlobalHeader .accountContainer a:visited,
+    .gscTheme .pepGlobalHeader .accountContainer span.noLink,
+    .gscTheme .pepGlobalHeader .accountContainer span.noLink:hover,
+    /* Chrome bar separators ( | ) */
+    .gscTheme .pepGlobalHeader .accountContainer,
+    .gscTheme .pepGlobalHeader .accountContainer:nth-of-type(1):not(:empty) + .accountContainer.langSelector::before,
+    .gscTheme .pepGlobalHeader .accountContainer.additionalLink::before,
+    /* Nav category title */
+    .gscTheme .globalNavigationBar .gnbCategoryTitle,
+    .gscTheme .globalNavigationBar .gnbCategoryTitle:visited,
+    /* Cart title and products */
+    .gscTheme #cartSemiDetailConvertedTotal, .gscTheme #pepCartSemiDetail .title,
+    .gscTheme #cartSemiDetailYourCartLabel, .gscTheme #cartSemiDetailTotal,
+    .gscTheme #semiDetailEmptyCart,
+    /* Cart products container */
+    .gscTheme #pepCartSemiDetail .headerLineBorder,
+    /* Show More Links (second section) category group title (NO SYNDICATED) */
+    .gscTheme .pepGlobalFooter .socialMediaAndRequestInformationContainer .sectionTitle,
+    /* Show More Links (second section) category group links (NO SYNDICATED) */
+    .gscTheme .pepGlobalFooter .socialMediaAndRequestInformationContainer a {
+        color: var(--colorWhite);
+    }
+
+    /* -------------------------------------------------- */
+
+    /* Links of each nav category content */
+    .gscTheme .gnbSubmenu .link,
+    .gscTheme .gnbSubmenu .link:visited,
+    .gscTheme .gnbSubmenu .pkLink,
+    .gscTheme .gnbSubmenu .pkLink:visited,
+    .gscTheme .gnbSubmenu .helpLink,
+    .gscTheme .gnbSubmenu .helpLink:visited .gnbSubmenu .profileLink,
+    .gscTheme .gnbSubmenu .profileLink:visited,
+    .gscTheme .gnbSubmenu .notificationsLink,
+    .gscTheme .gnbSubmenu .notificationsLink:visited,
+    /* Park Hours on hover */
+    .gscTheme a.gnbParkHoursOuterWrapper:hover .gnbParkIcons .icon,
+    .gscTheme a.gnbParkHoursOuterWrapper:hover .gnbParkHoursRightWrapper,
+    /* Show More Links (first section) category group links (SYNDICATED) */
+    .gscTheme .pepSyndicatedComponent #footer-lists-responsive-syndicated .footer-lists li a:hover,
+    .gscTheme .pepSyndicatedComponent #footer-lists-responsive-syndicated .footer-lists li a:focus,
+    .gscTheme .pepSyndicatedComponent #footer-lists-responsive-syndicated .footer-lists li a:visited,
+    /* Show More Links (first section) category group links (NO SYNDICATED) */
+    .gscTheme .pepGlobalFooter .footerGeneralLinks .linksGroupItem a,
+    .gscTheme .pepGlobalFooter .footerGeneralLinks .linksGroupItem a:hover,
+    .gscTheme .pepGlobalFooter .footerGeneralLinks .linksGroupItem a:focus,
+    .gscTheme .pepGlobalFooter .footerGeneralLinks .linksGroupItem a:visited,
+    /* Show More Links (second section) category group text (NO SYNDICATED) */
+    .gscTheme .pepGlobalFooter .socialMediaAndRequestInformationContainer {
+        color: var(--colorLightPeach);
+    }
+
+    /* -------------------------------------------------- */
+
+    /* Header bar container */
+    .gscTheme .globalNavigationBarWrapper,
+    /* Mobile sidebar */
+    .gscTheme .pepSyndicatedComponent.mobile-nav-open .globalNavigationBar .gnbLinkContainer,
+    /* Cart category of the nav (products container) */
+    .gscTheme #pepCartSemiDetail .headerLineBorder {
+        box-shadow: none;
+    }
+
+    /* Right submenu of an opened nav category */
+    .gscTheme .gnbSubmenu .rightSubmenu,
+    /* FAQ bottom section of Help nav category */
+    .gscTheme .gnbHelp .faqBottomSection {
+        border-color: #474747;
+    }
+
+    /* Nav category title on hover */
+    .gscTheme .globalNavigationBar .gnbCategory:hover .gnbCategoryTitle,
+    .gscTheme .globalNavigationBar .gnbCategory.categoryFocus .gnbCategoryTitle,
+    .gscTheme .globalNavigationBar .gnbCategory a:not(.btn):focus,
+    .gscTheme .globalNavigationBar .gnbCategory.touched .gnbCategoryTitle,
+    .gscTheme .globalNavigationBar .gnbMyDisneyVacation.my-plans .gnbSubmenu .gnbSubmenusWrapper .gnbMDXList li.mdxLink a,
+    .gscTheme .globalNavigationBar .gnbSubmenu .gnbSubmenusWrapper .submenuPlacement .gnbMDXList .gnbMDXBottomSection {
+        background: var(--colorBlack);
+        color: var(--colorLightPeach) !important;
+        text-decoration: none;
+    }
+
+    /* Links of each nav category content on hover */
+    .gscTheme .gnbSubmenu a.pkLink:hover,
+    .gscTheme .gnbSubmenu a.pkLink:focus,
+    .gscTheme .gnbSubmenu a.helpLink:hover,
+    .gscTheme .gnbSubmenu a.helpLink:focus,
+    .gscTheme .gnbSubmenu a.profileLink:hover,
+    .gscTheme .gnbSubmenu a.profileLink:focus,
+    .gscTheme .gnbSubmenu a.resortLink:hover,
+    .gscTheme .gnbSubmenu a.resortLink:focus,
+    .gscTheme .gnbSubmenu a.notificationsLink:hover,
+    .gscTheme .gnbSubmenu a.notificationsLink:focus,
+    .gscTheme .gnbPlacesToStay .reservationsList li > a:hover,
+    .gscTheme .gnbPlacesToStay .reservationsList li > a:focus,
+    .gscTheme .gnbMyDisneyVacation.my-plans .gnbSubmenu .gnbSubmenusWrapper .gnbMDXList li.mdxLink a:hover,
+    .gscTheme .gnbMDXList li.mdxLink a:hover .gnbParkIcons .icon {
+        background: var(--colorLightPeach);
+        color: var(--colorBlack) !important;
+    }
+
+    /* Park Hours */
+    .gscTheme a.gnbParkHoursOuterWrapper {
+        color: var(--colorWhite) !important;
+    }
+
+    /* Park Hours icons on hover */
+    .gscTheme a.gnbParkHoursOuterWrapper:hover .gnbParkIcons img.svgIcon {
+        filter: var(--filterColorLightPeach);
+    }
+
+    /* FAQ links of Help category of the nav on hover */
+    .gscTheme .globalNavigationBar .gnbHelp .faqLink a:hover,
+    .gscTheme .globalNavigationBar .gnbHelp .faqLink a:focus {
+        color: var(--colorLightPeach) !important;
+    }
+
+    /* Show More Links whole content container */
+    .gscTheme .pepSyndicatedComponent #footer-lists-responsive-syndicated {
+        border: 0;
+    }
+
+    /* Related Disney Sites container (NO SYNDICATED) */
+    .gscTheme .pepGlobalFooter .languageAndRelatedSitesContainer {
+        background: var(--colorLightPeach);
+        border: 0;
+    }
+
+    /* Related Disney Sites title and links (NO SYNDICATED) */
+    .gscTheme .pepGlobalFooter .languageAndRelatedSitesContainer * {
+        color: var(--colorBlack) !important;
+    }
+}
