@@ -1,4 +1,4 @@
-let div = document.querySelector('.home');
+let div = document.querySelector('.animals');
 function getData(url, callback) {
 
 let jsonData;
@@ -13,6 +13,7 @@ getData('http://localhost:9001/read', useData);
 
 function useData(arrOfObjs) {
 const animalContainer = document.createElement('div');
+div.appendChild(animalContainer);
 console.log(arrOfObjs);
 arrOfObjs.forEach((animal) => {
 const pName = document.createElement('p');
@@ -28,5 +29,5 @@ animalContainer.appendChild(pHabitat);
 animalContainer.appendChild(pFood);
 animalContainer.appendChild(pAge);
 })
-div.appendChild(animalContainer);
+
 }
