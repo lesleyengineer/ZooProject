@@ -22,17 +22,19 @@ public class Animals {
 		super(); 
 	}
 	
-	public Animals (String habitat, String food, int age) {
+	public Animals (String name, String habitat, String food, int age) {
 		super();
+		this.name = name;
 		this.habitat = habitat;
 		this.food = food;
 		this.age = age;
 		
 	}
 
-	public Animals (Long id, String habitat, String food, int age) {
+	public Animals (Long id, String name, String habitat, String food, int age) {
 		super();
 		this.id = id;
+		this.name = name;
 		this.habitat = habitat;
 		this.food = food;
 		this.age = age;
