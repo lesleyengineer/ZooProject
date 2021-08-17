@@ -1,0 +1,6 @@
+com\natwest\zoo\controller\HomepageController.class
+com\natwest\zoo\service\AnimalService.class
+com\natwest\zoo\domain\Animals.class
+com\natwest\zoo\repo\AnimalRepo.class
+com\natwest\zoo\controller\AnimalController.class
+com\natwest\zoo\ZooProjectApplication.class
